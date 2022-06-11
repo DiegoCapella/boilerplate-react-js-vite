@@ -8,17 +8,17 @@ module.exports = {
     '!<rootDir>/src/config/**/*.{js,jsx,ts,tsx}',
     '!<rootDir>/src/pages/**/*.{js,jsx,ts,tsx}',
     '!<rootDir>/**/stories.{js,jsx,ts,tsx}',
-    '!<rootDir>/node_modules/',
+    '!<rootDir>/node_modules/'
   ],
   testEnvironment: 'jsdom',
   testMatch: [
     '**/__tests__/**/*.[jt]s?(x)',
-    '**/?(*.)+(spec|test|tests).[tj]s?(x)',
+    '**/?(*.)+(spec|test|tests).[tj]s?(x)'
   ],
   testPathIgnorePatterns: ['/node_modules/', '/.next/', '/.out/', '/public/'],
-  setupFilesAfterEnv: ['<rootDir>/.jest/setup-tests.js'],
+  setupFilesAfterEnv: ['<rootDir>/.jest/setup-jest.js']
   // transform: {
   //   // '\\.tsx?$': 'ts-jest',
   //   '\\.jsx?$': 'babel-jest',
   // },
-};
+}
